@@ -1,11 +1,9 @@
-./node_modules
-bower_components
-
+node_modules
 psd
 thumb
 sketch
 
-build
+/build
 
 .idea
 
