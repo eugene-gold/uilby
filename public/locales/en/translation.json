@@ -1,6 +1,11 @@
 {
-    "текстовый пример": "Test example",
-    "перевод": "Translate",
-    "Главная страница": "Main Page",
-    "Язык": "English"
+  "текстовый пример": "Test example",
+  "перевод": "Translate",
+  "Главная страница": "Main Page",
+  "Язык": "English",
+  "toggle": "Toggle",
+  "...Loading": "...Loading",
+  "Loading": "...Loading",
+  "Main page": "Main Page",
+  "About page": "About Page"
 }
