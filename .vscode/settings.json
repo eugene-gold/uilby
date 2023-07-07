@@ -6,5 +6,12 @@
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll": true
-    }
+    },
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+
+    "stylelint.enable": true,
+    "stylelint.validate": ["css", "scss"],
+    
 }
