@@ -1,4 +1,18 @@
 {
+  "": {
+    "": {
+      "": {
+        "Loading": "Loading"
+      }
+    }
+  },
+  "About page": "About page",
+  "Main page": "Main page",
+  "Not found": "Not found",
+  "Reload Page": "Reload Page",
+  "Uncaught error": "Uncaught error",
+  "throw error": "throw error",
+  "toggle": "toggle",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",
   "Язык": "Язык"

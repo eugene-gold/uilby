@@ -7,5 +7,9 @@
   "...Loading": "...Loading",
   "Loading": "...Loading",
   "Main page": "Main Page",
-  "About page": "About Page"
+  "About page": "About Page",
+  "Not found": "Page Not Found",
+  "Uncaught error": "Uncaught Error",
+  "Reload Page": "Reload Page",
+  "throw error": "Throw Error"
 }
