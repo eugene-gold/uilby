@@ -4,6 +4,7 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { AppRouter } from './providers/router';
 
 function App() {

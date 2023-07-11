@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { LangSwitcher } from 'widgets/LangSwitcher/LangSwitcher';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { useTranslation } from 'react-i18next';
+import { Button } from 'shared/ui/Button/Button';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
@@ -18,16 +19,20 @@ export const Sidebar = ({ className }: SidebarProps) => {
         setCollapsed((prev) => !prev);
     };
     return (
-        <div className={
-            classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])
-        }
+        <div
+            data-testid="sidebar"
+            className={
+                classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])
+            }
         >
-            <button
+            <Button
+                // eslint-disable-next-line i18next/no-literal-string
+                data-testid="sidebar-toggle"
                 type="button"
                 onClick={onToggle}
             >
                 {(t('toggle'))}
-            </button>
+            </Button>
             <div className={cls.swithcers}>
                 <ThemeSwitcher className="sdf" />
                 <LangSwitcher className={cls.lang} />
