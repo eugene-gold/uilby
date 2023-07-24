@@ -6,22 +6,38 @@
 import path from 'path';
 
 export default {
-    // All imported modules in your tests should be mocked automatically
-    // automock: false,
-
-    // Stop running tests after `n` failures
-    // bail: 0,
-
-    // The directory where Jest should store its cached dependency information
-    // cacheDirectory: "C:\\Users\\Eugene\\AppData\\Local\\Temp\\jest",
-
-    // Automatically clear mock calls, instances and results before every test
     clearMocks: true,
-
+    testEnvironment: 'jsdom',
+    coveragePathIgnorePatterns: [
+        '\\\\node_modules\\\\',
+    ],
+    moduleFileExtensions: [
+        'js',
+        'jsx',
+        'ts',
+        'tsx',
+        'json',
+        'node',
+    ],
+    moduleDirectories: [
+        'node_modules',
+    ],
+    modulePaths: [
+        '<rootDir>src',
+    ],
+    testMatch: [
+        // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
+        '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
+    ],
+    rootDir: '../../',
+    setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+    moduleNameMapper: {
+        '\\.s?css$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+    },
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
 
-    // eslint-disable-next-line max-len
     // An array of glob patterns indicating a set of files for which coverage information should be collected
     // collectCoverageFrom: undefined,
 
@@ -29,9 +45,6 @@ export default {
     // coverageDirectory: undefined,
 
     // An array of regexp pattern strings used to skip coverage collection
-    coveragePathIgnorePatterns: [
-        '\\\\node_modules\\\\',
-    ],
 
     // Indicates which provider should be used to instrument code for coverage
     // coverageProvider: "babel",
@@ -56,49 +69,25 @@ export default {
     // Force coverage collection from ignored files using an array of glob patterns
     // forceCoverageMatch: [],
 
-    // eslint-disable-next-line max-len
     // A path to a module which exports an async function that is triggered once before all test suites
     // globalSetup: undefined,
 
-    // eslint-disable-next-line max-len
     // A path to a module which exports an async function that is triggered once after all test suites
     // globalTeardown: undefined,
 
     // A set of global variables that need to be available in all test environments
     // globals: {},
 
-    // eslint-disable-next-line max-len
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
 
-    // eslint-disable-next-line max-len
     // An array of directory names to be searched recursively up from the requiring module's location
-    moduleDirectories: [
-        'node_modules',
-    ],
 
     // An array of file extensions your modules use
-    moduleFileExtensions: [
-        'js',
-        'jsx',
-        'ts',
-        'tsx',
-        'json',
-        'node',
-    ],
-    modulePaths: [
-        '<rootDir>src',
-    ],
-    setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
-    moduleNameMapper: {
-        '\\.s?css$': 'identity-obj-proxy',
-        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
-    },
-    // eslint-disable-next-line max-len
+
     // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
     // moduleNameMapper: {},
 
-    // eslint-disable-next-line max-len
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
     // modulePathIgnorePatterns: [],
 
@@ -139,15 +128,12 @@ export default {
     // Allows you to use a custom runner instead of Jest's default test runner
     // runner: "jest-runner",
 
-    // eslint-disable-next-line max-len
     // The paths to modules that run some code to configure or set up the testing environment before each test
     // setupFiles: [],
 
-    // eslint-disable-next-line max-len
     // A list of paths to modules that run some code to configure or set up the testing framework before each test
     // setupFilesAfterEnv: [],
 
-    // eslint-disable-next-line max-len
     // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
 
@@ -155,7 +141,6 @@ export default {
     // snapshotSerializers: [],
 
     // The test environment that will be used for testing
-    testEnvironment: 'jsdom',
 
     // Options that will be passed to the testEnvironment
     // testEnvironmentOptions: {},
@@ -164,12 +149,7 @@ export default {
     // testLocationInResults: false,
 
     // The glob patterns Jest uses to detect test files
-    testMatch: [
-        '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
-    ],
-    rootDir: '../../',
 
-    // eslint-disable-next-line max-len
     // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
     // testPathIgnorePatterns: [
     //   "\\\\node_modules\\\\"
@@ -184,7 +164,6 @@ export default {
     // This option allows use of a custom test runner
     // testRunner: "jest-circus/runner",
 
-    // eslint-disable-next-line max-len
     // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
     // testURL: "http://localhost",
 
@@ -194,21 +173,18 @@ export default {
     // A map from regular expressions to paths to transformers
     // transform: undefined,
 
-    // eslint-disable-next-line max-len
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
     //   "\\\\node_modules\\\\",
     //   "\\.pnp\\.[^\\\\]+$"
     // ],
 
-    // eslint-disable-next-line max-len
     // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
     // unmockedModulePathPatterns: undefined,
 
     // Indicates whether each individual test should be reported during the run
     // verbose: undefined,
 
-    // eslint-disable-next-line max-len
     // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
     // watchPathIgnorePatterns: [],
 

@@ -1,34 +1,22 @@
-import type { Meta, StoryObj } from '@storybook/react';
-
+import React from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import MainPage from './MainPage';
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta: Meta<typeof MainPage> = {
-  title: 'pages/MainPage',
-  component: MainPage,
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-};
 
-export default meta;
-type Story = StoryObj<typeof MainPage>;
-
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-export const Normal: Story = {
-  // More on args: https://storybook.js.org/docs/react/writing-stories/args
-  args: {  
-  },
-};
-
-  export const Dark: Story = {
-    args: {
-    
+export default {
+    title: 'pages/MainPage',
+    component: MainPage,
+    argTypes: {
+        backgroundColor: { control: 'color' },
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
-    
-  };
+} as ComponentMeta<typeof MainPage>;
+
+const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args} />;
+
+export const Normal = Template.bind({});
+Normal.args = {};
+
+export const Dark = Template.bind({});
+Dark.args = {};
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

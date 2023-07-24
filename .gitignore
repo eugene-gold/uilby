@@ -1,9 +1,3 @@
-node_modules
-psd
-thumb
-sketch
-
 /build
-
+node_modules
 .idea
-

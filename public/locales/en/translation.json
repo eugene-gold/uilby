@@ -1,15 +1,13 @@
 {
-  "текстовый пример": "Test example",
-  "перевод": "Translate",
-  "Главная страница": "Main Page",
+  "Тестовый пример": "Test example",
+  "Перевод": "Translate",
+  "Главная страница": "Main page",
   "Язык": "English",
-  "toggle": "Toggle",
-  "...Loading": "...Loading",
-  "Loading": "...Loading",
-  "Main page": "Main Page",
-  "About page": "About Page",
-  "Not found": "Page Not Found",
-  "Uncaught error": "Uncaught Error",
-  "Reload Page": "Reload Page",
-  "throw error": "Throw Error"
+  "новый перевод": "новый перевод",
+  "Страница не найдена": "Page not found",
+  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Обновить страницу": "Reload page",
+  "throw error": "throw error",
+  "Главная": "Main",
+  "О сайте": "About us"
 }
