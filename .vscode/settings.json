@@ -1,9 +1,6 @@
 {
     "svg.preview.background": "black",
-    "i18n-ally.localesPaths": [
-        "public/locales",
-        "src/shared/config/i18n"
-    ],
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "editor.codeActionsOnSave": {
         "source.fixAll": true
     },
@@ -12,10 +9,6 @@
     "scss.validate": false,
 
     "stylelint.enable": true,
-    "stylelint.validate": [
-        "css",
-        "scss"
-    ],
-    "i18n-ally.keystyle": "flat",
-    
+    "stylelint.validate": ["css", "scss"],
+    "i18n-ally.keystyle": "flat"
 }
