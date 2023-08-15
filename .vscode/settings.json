@@ -1,5 +1,5 @@
 {
-    "svg.preview.background": "black",
+    "svg.preview.background": "transparent",
     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "editor.codeActionsOnSave": {
         "source.fixAll": true
