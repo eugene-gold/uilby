@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import {
+import React, {
     ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { useTheme } from 'app/providers/ThemeProvider';
