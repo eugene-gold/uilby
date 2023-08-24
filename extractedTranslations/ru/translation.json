@@ -1,5 +1,7 @@
 {
   "Enter": "Enter",
+  "decrem": "decrem",
+  "increm": "increm",
   "throw error": "throw error",
   "toggle": "toggle",
   "Главная": "Главная",
