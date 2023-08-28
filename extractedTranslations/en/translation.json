@@ -1,9 +1,12 @@
 {
   "Enter": "Enter",
+  "Password": "Password",
+  "Username": "Username",
   "decrem": "",
   "increm": "",
   "throw error": "throw error",
   "toggle": "",
+  "Войти": "Войти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
   "О сайте": "О сайте",

@@ -14,5 +14,7 @@
   "Короткий язык": "EN",
   "Enter": "Enter",
   "increm": "Increment",
-  "decrem": "Decrement"
+  "decrem": "Decrement",
+  "Username": "Username",
+  "Password": "Password"
 }
