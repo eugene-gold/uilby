@@ -3,7 +3,7 @@
 
 npm run build:prod
 npm run lint:ts
-npm run build:scss
+npm run lint:scss
 npm run unit
 npm run build-storybook
 npm run test:ui
