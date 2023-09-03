@@ -16,5 +16,8 @@
   "increm": "Увеличить",
   "decrem": "Уменьшить",
   "Username": "Пользователь",
-  "Password": "Пароль"
+  "Password": "Пароль",
+  "Wrong username or password": "Неверное имя пользователя или пароль",
+  "Authorization": "Форма авторизации",
+  "Logout": "Выйти"
 }

@@ -1,7 +1,10 @@
 {
+  "Authorization": "Authorization",
   "Enter": "Enter",
+  "Logout": "Logout",
   "Password": "Password",
   "Username": "Username",
+  "Wrong username or password": "Wrong username or password",
   "decrem": "decrem",
   "increm": "increm",
   "throw error": "throw error",
@@ -14,5 +17,6 @@
   "Обновить страницу": "Обновить страницу",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
+  "Форма авторизации": "Форма авторизации",
   "Язык": "Язык"
 }
