@@ -6,6 +6,7 @@ import { useDispatch, useSelector, useStore } from 'react-redux';
 import { memo, useCallback, useEffect } from 'react';
 import { TextTheme, Text } from 'shared/ui/Text/Text';
 import { ReduxStorewithManger } from 'app/providers/StoreProvider';
+import { useAppDispatch } from 'shared/lib/hooks/useappDispatch/useAppDispatch';
 import {
     getLoginPassword,
 } from '../../model/selectors/getLoginPassword/getLoginPassword';
@@ -21,12 +22,13 @@ import { loginActions, loginReducer } from '../../model/slice/loginSlice';
 import cls from './LoginForm.module.scss';
 
 export interface LoginFormProps {
-    className?: string
+    className?: string;
+    onSuccess: ()=> void
 }
 
-const LoginForm = memo(({ className }: LoginFormProps) => {
+const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
     const { t } = useTranslation();
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const store = useStore() as ReduxStorewithManger;
     const username = useSelector(getLoginUsername);
     const password = useSelector(getLoginPassword);
@@ -50,9 +52,12 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
         dispatch(loginActions.setPassword(value));
     }, [dispatch]);
 
-    const onLoginClick = useCallback(() => {
-        dispatch(loginByUserName({ password, username }));
-    }, [dispatch, password, username]);
+    const onLoginClick = useCallback(async () => {
+        const result = await dispatch(loginByUserName({ password, username }));
+        if (result.meta.requestStatus === 'fulfilled') {
+            onSuccess();
+        }
+    }, [dispatch, onSuccess, password, username]);
 
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>

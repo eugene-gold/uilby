@@ -14,7 +14,15 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "name",
+    "lastname": "lastname",
+    "age": "30",
+    "currensy": "RUB",
+    "country": "RF",
+    "city": "Ust-Kut",
+    "username": "admin",
+    "avatar": "https://avatarko.ru/img/kartinka/32/devushka_brunetka_31761.jpg"
+
   },
   "users": [
     {
