@@ -2,7 +2,7 @@
     "svg.preview.background": "transparent",
     "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": "explicit"
     },
     "css.validate": false,
     "less.validate": false,
